@@ -1,4 +1,6 @@
 ﻿using System;
+using dotnetconflib;
+using dotnetconflib.EpplusSample.Sample01;
 
 namespace dotnetconf
 {
@@ -6,7 +8,8 @@ namespace dotnetconf
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           Sample01 demo = new Sample01();
+           demo.RunSample1();
         }
     }
 }
