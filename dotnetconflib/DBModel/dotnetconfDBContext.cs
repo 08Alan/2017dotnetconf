@@ -1,6 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-
+using Microsoft.EntityFrameworkCore;
 using dotnetconflib.Entity.Blog;
 using dotnetconflib.Entity.Post;
 
@@ -14,7 +13,7 @@ namespace dotnetconflib.DBModel.dotnetconfDBContext
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=servername, 1433;Database=2017dotnetconf;user=alanliu;password=password;");
+                @"Server=servername, 1433;Database=2017dotnetconf;user=alanliu;password=password");
         }
     }    
 }

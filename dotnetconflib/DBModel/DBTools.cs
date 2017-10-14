@@ -21,7 +21,7 @@ namespace dotnetconflib.DBModel.DBTools
         {
             new Blog { Url = "http://blogs.msdn.com/adonet", Rating = 5 },
             new Blog { Url = "https://08alan.github.io/", Rating = 4 },
-            new Blog { Url = "https://kji0.blogspot.tw/", Rating = 3 },
+            new Blog { Url = "https://", Rating = 3 },
         };
         public void storeData()
         {
@@ -69,7 +69,7 @@ namespace dotnetconflib.DBModel.DBTools
 
                 if (db.Blogs.GetType() != null)
                 {
-                    ws = ep.Workbook.Worksheets.Add("AzureTaiwan");
+                    ws = ep.Workbook.Worksheets.Add("dotnetconf");
                     var blog_set = db.Blogs;
                     
                     List<Blog> blog_list = new List<Blog>();
@@ -114,7 +114,7 @@ namespace dotnetconflib.DBModel.DBTools
                     // /Library/Frameworks/Mono.framework/Versions/5.0.1/lib/libgdiplus.0.dylib.dSYM
                     // /Library/Frameworks/Mono.framework/Versions/5.0.1/lib/libgdiplus.dylib
                     // /Library/Frameworks/Mono.framework/Versions/5.0.1/lib/libgdiplus.la
-                    ws.Cells["A1:C" + count.ToString()].AutoFitColumns();
+                    //ws.Cells["A1:C" + count.ToString()].AutoFitColumns();
                 }
                 else
                 {
